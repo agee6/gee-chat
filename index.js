@@ -12,6 +12,7 @@ app.get('/', function(req, res){
 
 io.on('connection', function(socket){
   console.log('a user connected');
+  console.log('banana');
   socket.on('disconnect', function(){
     console.log('user disconnected');
   });
@@ -21,10 +22,10 @@ io.on('connection', function(socket){
   });
 });
 
-app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
-});
-
-// http.listen(3000, function(){
-//   console.log('listening on *:3000');
+// app.listen(app.get('port'), function() {
+//   console.log('Node app is running on port', app.get('port'));
 // });
+
+http.listen(app.get('port'), function(){
+  console.log('listening on *:3000');
+});
