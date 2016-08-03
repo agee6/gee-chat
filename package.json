@@ -1,0 +1,21 @@
+{
+  "name": "gee-chat",
+  "version": "0.0.1",
+  "description": "chat for the gee generation",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "socket.io": "^1.4.8"
+  },
+
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agee6/ChatExample"
+  }
+}
