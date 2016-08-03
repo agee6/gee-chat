@@ -16,13 +16,13 @@
   </head>
 
   <body>
-    <h1> This is my super Awesome App</h1> 
+    <h1> This is my super Awesome App</h1>
     <ul id="messages"></ul>
     <form action="">
       <input id="m" autocomplete="off" /><button>Send</button>
     </form>
     <script src="/socket.io/socket.io.js"></script>
-    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
     <script>
       var socket = io();
       $('form').submit(function(){
@@ -33,6 +33,9 @@
       socket.on('chat message', function(msg){
         $('#messages').append($('<li>').text(msg));
       });
+    </script>
+    <script type="text/javascript">
+      console.log("why is this happening");
     </script>
 
   </body>
